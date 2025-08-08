@@ -1,0 +1,58 @@
+# ===========================
+# Unreal Engine - Git Ignore
+# ===========================
+
+# --- Engine-generated folders ---
+Binaries/
+Build/
+DerivedDataCache/
+Intermediate/
+Saved/
+
+# --- Keep essential config overrides ---
+!Saved/Config/DefaultEditor.ini
+!Saved/Config/DefaultEngine.ini
+!Saved/Config/DefaultGame.ini
+
+# --- Filter subfolders of Saved we never want ---
+Saved/Autosaves/
+Saved/Logs/
+Saved/Config/CrashReportClient/
+Saved/Config/Windows/
+Saved/Config/WorldState/
+Saved/*.log
+
+# --- Project files (VS, debug) ---
+.vs/
+.vscode/
+*.opensdf
+*.sdf
+*.suo
+*.tmp
+*.pdb
+*.cache
+*.log
+*.VC.db
+*.VC.opendb
+
+# --- Build metadata ---
+*.sln
+*.csproj
+*.user
+*.db
+
+# --- Optional: Mac/Linux ---
+*.DS_Store
+*.swp
+
+# --- Exclude local launch configs if any ---
+*.local
+
+# ===========================
+# Note:
+# UE4 content files (*.uasset, *.umap) are tracked and pushed via Git LFS.
+# Make sure .gitattributes is set up properly:
+#
+# *.uasset filter=lfs diff=lfs merge=lfs -text
+# *.umap   filter=lfs diff=lfs merge=lfs -text
+# ===========================
