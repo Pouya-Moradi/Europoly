@@ -1,0 +1,38 @@
+# ---------- Unreal Engine ----------
+Binaries/
+DerivedDataCache/
+Intermediate/
+
+# Ignore all Saved except some Config
+Saved/
+!Saved/Config/DefaultEditor.ini
+!Saved/Config/DefaultEngine.ini
+!Saved/Config/DefaultGame.ini
+
+# Exclude unwanted autosaves, logs, crash reports, world state
+Saved/Autosaves/
+Saved/Logs/
+Saved/Config/CrashReportClient/
+Saved/Config/Windows/
+Saved/Config/WorldState/
+Saved/*.log
+*.log
+*.tmp
+*.json
+
+# Project files
+.vs/
+*.opensdf
+*.sdf
+*.cache
+*.pdb
+
+# IDEs and editors
+.idea/
+.vscode/
+
+# Build files
+*.vcxproj
+*.sln
+*.VC.db
+*.VC.opendb
